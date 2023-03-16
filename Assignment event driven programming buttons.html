@@ -7,9 +7,10 @@
     <title>Event Driven Programming buttons</title>
     <title> David Austin</title>
     <style>
+   
     table, th, td {
         border: 1px solid blue;
-        border-collapse: collapse; 
+        border-collapse: collapse;
         align="left";      
       } 
       th, td {
@@ -20,6 +21,7 @@
     </head>
 
 <body>
+        <script type="text/Javascript">
         <h1 align="center">
             <p><font color="#0000ff">UAT Space Program</font></p>
         </h1>
@@ -28,7 +30,7 @@
         <body background="C:\Users\direw\java\earthrise.jpeg">
     </body>
     <body>
-            <table style="width:35%">
+                    <table style="width:35%">
                 <font color="white"> 
             <tr>
                 <th>Data type</th>
@@ -36,95 +38,119 @@
             </tr>
             <tr>
                 <td>Time:</td>
-                <td> <input type="datetime-local" name="Current"> </td>
+                <td> <input type="datetime-local" name="Current datetime-local"></td>
+                <td><div id="ErrDateTime"></div> </td>
             </tr>
             <tr>
                 <td>Time Elapsed:</td>
-                <td></td>
+                <td <id="elapsedTimer"></td>
+                <td><div id="errTimer"></div></td>
             </tr>
             <tr>
                 <td>Latitude:</td>
-                <td>35 deg 5' 1.765" n</td>
+                <td><id="latitudeReading"></td>
+                <td><input type="text" id="Latitude"></td>
             </tr>
             <tr>
                 <td>Longitude:</td>
-                <td>86 deg 48' 40.808" w</td>
+                <td><id="latitudeReading"></id></td>
+                <td><div id="errLongitude"></div></td>
             </tr>
             <tr>
                 <td>Altitude:</td>
-                <td>627ft</td>
+                <td><id="AltitudeReading"></id></td>
+                <td><div id="errAltitude"></div></td>
             </tr>
             <tr>
                 <td>GPS Altitude:</td>
-                <td></td>
+                <td><id="GPSAltitudeReading"></id></td>
+                <td><div id="errGPSAltitude"></div></td>
             </tr>
             <tr>
                 <td>BMP Sensor Altitude:</td>
-                <td></td>
+                <td><id="BMPAltitudeReading"></id></td>
+                <td><div id="errBMPAltitude"></div></td>
             </tr>
             <tr>
                 <td>BMP Sensor Temperature:</td>
-                <td></td>
+                <td><id="BMPTemperatureReading"></id></td>
+                <td><div id="errBMPTemperature"></div></td>
             </tr>
             <tr>
                 <td>Digital Sensor Temperature:</td>
-                <td></td>
+                <td><id="DigitalTemperatureReading"></id></td>
+                <td><div id="errDigitalTempature"></div></td>
+
             </tr>
             <tr>
                 <td>CSS Sensor Temperature:</td>
-                <td></td>
+                <td><id="CSSTemperatureReading"</></td>
+                <td><div id"errCSSTemperature"></div></td>
             </tr>
             <tr>
                 <td>CSS Sensor eCO2:</td>
-                <td></td>
+                <td><id="CSSeCO2Reading"></id></td>
+                <td><div id="errCssCO2"></div></td>
             </tr>
             <tr>
                 <td>CSS Sensor TVOC:</td>
-                <td></td>
+                <td><id="CSSTVOCReading"></id></td>
+                <td><div id-"errCSSTVOC"></div></td>
             </tr>
             <tr>
-                <td>UV:</td>
-                <td></td>
+                <td>UV number:</td>
+                <td><id="UVReading"></id></td>
+                <td><div id="errUV"></div></td>
             </tr>
             <tr>
                 <td>Accel X:</td>
-                <td></td>
+                <td><id="AccelXReading"></id></td>
+                <td><div id="errAccelX"></div></td>                
             </tr>
             <tr>
                 <td>Accel Y:</td>
-                <td></td>
+                <td><id="AccelYReading"></id></td>
+                <td><div id="AccelY"></div></td>
             </tr>
             <tr>
                 <td>Accel Z:</td>
-                <td></td>
+                <td><id="AccelZReading"></id></td>
+                <td><div id="AccelZ"></div></td>
             </tr>
             <tr>
                 <td>Magnetic X:</td>
-                <td></td>
+                <td><id="MagneticXReading"></id></td>
+                <td><div id="MagneticX"></div></td>
             </tr>
             <tr>
                 <td>Magnetic Y:</td>
-                <td></td>
+                <td><id="MagneticYReading"></id></td>
+                <td><div id="magneticY"></div></td>
             </tr>
             <tr>
                 <td>Magnetic Z:</td>
-                <td></td>
+                <td><id="MagneticZReading"></id></td>
+                <td><div id="MagneticZ"></div></td>
             </tr>
             <tr>
                 <td>Gyro X:</td>
-                <td></td>
+                <td><id="GyroXReading"></id></td>
+                <td><div id="GyroX"></div></td>
             </tr>
             <tr>
                 <td>Gyro Y:</td>
-                <td></td>
+                <td><id="GyroYReading"></id></td>
+                <td><div id="GyroY"></div></td>
             </tr>
             <tr>
                 <td>Gyro Z:</td>
-                <td></td>
+                <td><id="GyroZReading"></id></td>
+                <td><div id="GyroZ"></div></td>
             </tr>
             </font>              
             </table>
         
+        </script>
         
 </body>
 </html>
