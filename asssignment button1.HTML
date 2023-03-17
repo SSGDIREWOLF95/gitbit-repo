@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<body lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Event Driven Programming buttons</title>
+		<!-- <title> David Austin</title> -->
+        <!--CSS Style is used here to set up table-->
+        <!--Table will have coloms and rows-->
+		<style>
+        
+		table, th, td {
+            //the border is a solid blue
+			border: 1px solid blue;
+            <!--the border style I chose is ridged-->
+			p.ridge {border-style: ridge;}
+            <!--i have aligned the table to the left-->
+			align="left";      
+		} 
+		th, td {
+            //i chose Dark Slate Grey for the background of the collums
+            background-color: darkslategrey;
+			color: white;
+		}         
+		</style>
+	</head>
+    <!--i chose a earth rise from orbit of the moon for the background -->
+    <!--the image is on githud for ease of access -->
+	<img background="https://github.com/SSGDIREWOLF95/gitbit-repo/blob/main/earthrise.jpeg" alt="Earth rise on the moon">
+        <!-- the first Paragraph is centered and the color teal-->
+		<h1 align="center">
+			<p>
+				<font color="#0000ff">UAT Space Program</font>
+			</p>
+		</h1>
+        <!--the UAT Space Logo is placed in the left side above the table-->
+        <!--the logo is on github for ease of having access to the image-->
+		<img scr="https://github.com/SSGDIREWOLF95/gitbit-repo/blob/main/UATspaceLogo-2.jpg" alt="UAT Space Logo">
+    		<h2>
+                <!--the color of this paragraph is also teal as the above paragraph-->
+			<font color="#0000ff">Current Incoming Data</font>
+		</h2>
+        <!--i made the collums take up only 35 percent of the screen-->
+		<table style="width:35%">
+			<font color="white">
+				<tr>
+                    <!--this is the collums for the table which is data type and the reading-->
+                    <!--that the sensors wouldbe sending to to the table-->
+					<th>Data type</th>
+					<th>Reading</th>
+				</tr>
+                <!--this is where all the rows start with the name of the sensor or input-->
+                <!--is the first item in the row and the reading is the second item in the row-->
+				<tr>
+                    <!--each of the rows are distinct inputs-->
+					<td>Time:</td>
+					<td>
+						<input type="datetime-local" name="Current datetime-local"/>
+					</td>
+					<td><p>Set current date</p>
+						<div id="ErrDateTime"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Time Elapsed:</td>
+					<td id="elapsedTimer"/>
+					<td>
+						<div id="errTimer"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Latitude:</td>
+					<td id="latitudeReading"/>
+					<td>
+						<input type="text" id="Latitude"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Longitude:</td>
+					<td id="longitudeReading"/>
+					<td>
+						<div id="errLongitude"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Altitude:</td>
+					<td id="AltitudeReading"/>
+					<td>
+						<div id="errAltitude"/>
+					</td>
+				</tr>
+				<tr>
+					<td>GPS Altitude:</td>
+					<td id="GPSAltitudeReading"/>
+					<td>
+						<div id="errGPSAltitude"/>
+					</td>
+				</tr>
+				<tr>
+					<td>BMP Sensor Altitude:</td>
+					<td id="BMPAltitudeReading"/>
+					<td>
+						<div id="errBMPAltitude"/>
+					</td>
+				</tr>
+				<tr>
+					<td>BMP Sensor Temperature:</td>
+					<td id="BMPTemperatureReading"/>
+					<td>
+						<div id="errBMPTemperature"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Digital Sensor Temperature:</td>
+					<td id="DigitalTemperatureReading"/>
+					<td>
+						<div id="errDigitalTempature"/>
+					</td>
+				</tr>
+				<tr>
+					<td>CSS Sensor Temperature:</td>
+					<td id="CSSTemperatureReading"/>
+					<td>
+						<div id"errCSSTemperature"/>
+					</td>
+				</tr>
+				<tr>
+					<td>CSS Sensor eCO2:</td>
+					<td id="CSSeCO2Reading"/>
+					<td>
+						<div id="errCssCO2"/>
+					</td>
+				</tr>
+				<tr>
+					<td>CSS Sensor TVOC:</td>
+					<td id="CSSTVOCReading"/>
+					<td>
+						<div id="errCSSTVOC"/>
+					</td>
+				</tr>
+				<tr>
+					<td>UV number:</td>
+					<td id="UVReading"/>
+					<td>
+						<div id="errUV"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Accel X:</td>
+					<td id="AccelXReading"/>
+					<td>
+						<div id="errAccelX"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Accel Y:</td>
+					<td id="AccelYReading"/>
+					<td>
+						<div id="AccelY"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Accel Z:</td>
+					<td id="AccelZReading"/>
+					<td>
+						<div id="AccelZ"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Magnetic X:</td>
+					<td id="MagneticXReading"/>
+					<td>
+						<div id="MagneticX"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Magnetic Y:</td>
+					<td id="MagneticYReading"/>
+					<td>
+						<div id="magneticY"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Magnetic Z:</td>
+					<td id="MagneticZReading"/>
+					<td>
+						<div id="MagneticZ"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Gyro X:</td>
+					<td id="GyroXReading"/>
+					<td>
+						<div id="GyroX"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Gyro Y:</td>
+					<td id="GyroYReading"/>
+					<td>
+						<div id="GyroY"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Gyro Z:</td>
+					<td id="GyroZReading"/>
+					<td>
+						<div id="GyroZ"/>
+					</td>
+				</tr>
+                <!--closes out the script font-->
+			</font>
+            <!--closes out the table-->
+		</table>
+        <!--i put the star button at the bottom of the table-->
+		<button>Start</button>
+		<button>Stop</button>
+        <!--this closes out the body of the program-->
+	</body>
+    <!--this closes out the html Portion of the program-->
+</html>
